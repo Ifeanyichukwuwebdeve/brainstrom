@@ -6,14 +6,10 @@ const ArtSchema = new Schema({
     type: String,
     required: true
   },
-  subjects: [
-    {
-      title: {
-        type: String,
-        required: true
-      }
-    }
-  ]
+  subjects: {
+    type: Array,
+    require: true
+  }
 }, { timestamps: true })
 
 
